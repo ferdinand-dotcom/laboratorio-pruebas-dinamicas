@@ -69,3 +69,30 @@ Archivo evidencias/pruebas-iniciales.txt.
 - Severidad media: 1.
 - Estado general: Pendientes de correccion.
 - Ejecucion inicial: 5 pruebas aprobadas y 10 fallidas.
+
+## Verificacion final de defectos
+
+### DEF-01: Redondeo decimal
+- Estado final: Corregido y verificado.
+- Correccion: Se implemento el redondeo a dos decimales.
+- Pruebas de confirmacion: CP-06 y CP-07.
+- Resultado: Aprobadas.
+
+### DEF-02: Validacion de rangos
+- Estado final: Corregido y verificado.
+- Correccion: Se incorporo RangeError para valores fuera de rango.
+- Pruebas de confirmacion: CP-08 a CP-12.
+- Resultado: Aprobadas.
+
+### DEF-03: Validacion de tipos
+- Estado final: Corregido y verificado.
+- Correccion: Se incorporo TypeError para entradas no numericas o no finitas.
+- Pruebas de confirmacion: CP-13 a CP-15.
+- Resultado: Aprobadas.
+
+## Resultado de regresion
+- Pruebas ejecutadas: 15.
+- Pruebas aprobadas: 15.
+- Pruebas fallidas: 0.
+- Evidencia: evidencias/pruebas-finales.txt.
+- Conclusion: Los tres defectos documentados fueron corregidos y las pruebas automatizadas existentes aprobaron tras las modificaciones.
