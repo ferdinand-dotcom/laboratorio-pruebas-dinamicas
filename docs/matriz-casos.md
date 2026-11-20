@@ -7,21 +7,21 @@ Definir casos de prueba trazables para verificar los requisitos del modulo calcu
 
 | ID | Requisito | Tecnica | Datos (precio, cantidad, descuento) | Resultado esperado | Prioridad | Estado |
 |---|---|---|---|---|---|---|
-| CP-01 | RF-01 | Particion valida | (10, 2, 0) | 20.00 | Alta | Disenado |
-| CP-02 | RF-01 | Particion valida | (15.50, 3, 0) | 46.50 | Alta | Disenado |
-| CP-03 | RF-02 | Valor limite inferior | (100, 2, 0) | 200.00 | Alta | Disenado |
-| CP-04 | RF-02 | Particion valida | (100, 2, 25) | 150.00 | Alta | Disenado |
-| CP-05 | RF-02, RF-03 | Valor limite superior | (100, 2, 100) | 0.00 | Alta | Disenado |
-| CP-06 | RF-03 | Precision decimal | (0.333, 3, 0) | 1.00 | Alta | Disenado |
-| CP-07 | RF-03 | Precision decimal | (10.99, 3, 15) | 28.02 | Alta | Disenado |
-| CP-08 | RF-04 | Particion invalida | (-10, 2, 0) | RangeError | Alta | Disenado |
-| CP-09 | RF-04 | Valor limite | (10, 0, 0) | RangeError | Alta | Disenado |
-| CP-10 | RF-04 | Particion invalida | (10, -1, 0) | RangeError | Alta | Disenado |
-| CP-11 | RF-04 | Limite inferior invalido | (10, 2, -1) | RangeError | Alta | Disenado |
-| CP-12 | RF-04 | Limite superior invalido | (10, 2, 101) | RangeError | Alta | Disenado |
-| CP-13 | RF-05 | Particion invalida | ("10", 2, 0) | TypeError | Alta | Disenado |
-| CP-14 | RF-05 | Valor no finito | (Infinity, 2, 0) | TypeError | Alta | Disenado |
-| CP-15 | RF-05 | Valor no numerico | (NaN, 2, 0) | TypeError | Alta | Disenado |
+| CP-01 | RF-01 | Particion valida | (10, 2, 0) | 20.00 | Alta | Aprobado |
+| CP-02 | RF-01 | Particion valida | (15.50, 3, 0) | 46.50 | Alta | Aprobado |
+| CP-03 | RF-02 | Valor limite inferior | (100, 2, 0) | 200.00 | Alta | Aprobado |
+| CP-04 | RF-02 | Particion valida | (100, 2, 25) | 150.00 | Alta | Aprobado |
+| CP-05 | RF-02, RF-03 | Valor limite superior | (100, 2, 100) | 0.00 | Alta | Aprobado |
+| CP-06 | RF-03 | Precision decimal | (0.333, 3, 0) | 1.00 | Alta | Aprobado |
+| CP-07 | RF-03 | Precision decimal | (10.99, 3, 15) | 28.02 | Alta | Aprobado |
+| CP-08 | RF-04 | Particion invalida | (-10, 2, 0) | RangeError | Alta | Aprobado |
+| CP-09 | RF-04 | Valor limite | (10, 0, 0) | RangeError | Alta | Aprobado |
+| CP-10 | RF-04 | Particion invalida | (10, -1, 0) | RangeError | Alta | Aprobado |
+| CP-11 | RF-04 | Limite inferior invalido | (10, 2, -1) | RangeError | Alta | Aprobado |
+| CP-12 | RF-04 | Limite superior invalido | (10, 2, 101) | RangeError | Alta | Aprobado |
+| CP-13 | RF-05 | Particion invalida | ("10", 2, 0) | TypeError | Alta | Aprobado |
+| CP-14 | RF-05 | Valor no finito | (Infinity, 2, 0) | TypeError | Alta | Aprobado |
+| CP-15 | RF-05 | Valor no numerico | (NaN, 2, 0) | TypeError | Alta | Aprobado |
 
 ## Justificacion de las tecnicas
 
@@ -49,7 +49,8 @@ Se verifican resultados que requieren redondeo a dos decimales, debido al riesgo
 | RNF-01 | Medicion exploratoria independiente |
 
 ## Control de ejecucion
-El estado inicial de los casos es Disenado. Tras ejecutar Jest se actualizaran los estados a Aprobado o Fallido segun los resultados reales. Los defectos confirmados se documentaran por separado.
+El estado inicial de los casos es Aprobado. Tras ejecutar Jest se actualizaran los estados a Aprobado o Fallido segun los resultados reales. Los defectos confirmados se documentaran por separado.
 
 ## Observaciones
 La matriz documenta los resultados esperados definidos por la especificacion, no resultados observados. Las evidencias iniciales y finales permitiran comprobar el comportamiento real de la implementacion.
+
